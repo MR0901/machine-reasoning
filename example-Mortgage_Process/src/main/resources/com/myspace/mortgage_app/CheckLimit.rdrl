@@ -1,0 +1,12 @@
+package com.myspace.mortgage_app;
+
+import java.lang.Number;
+
+rule "CheckLimit"
+	dialect "mvel"
+	ruleflow-group "CheckLimit"
+	when
+		app : Application( mortgageamount >= ( app.property.saleprice-app.downpayment ) )
+	then
+		app.setInlimitAuto( true );
+end

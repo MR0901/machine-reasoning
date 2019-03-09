@@ -1,0 +1,12 @@
+package com.myspace.mortgage_app;
+
+import java.lang.Number;
+
+rule "CheckAge"
+	dialect "mvel"
+	ruleflow-group "CheckAge"
+	when
+		app : Application( age < 65 || age >= 21 )
+	then
+		app.setAgeCheck( true );
+end

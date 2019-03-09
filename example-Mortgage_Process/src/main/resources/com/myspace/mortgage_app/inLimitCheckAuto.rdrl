@@ -1,0 +1,14 @@
+package com.myspace.mortgage_app;
+
+import java.lang.Number;
+
+rule "inLimitCheckAuto"
+	dialect "mvel"
+	ruleflow-group "LimitCheckAuto"
+	when
+		app : Application( mortgageamount >= ( app.property.saleprice-app.downpayment ) )
+	then
+		InlimtError LimitError = new InlimtError();
+		LimitError.setInlimtError( "This is no imlimit Error!" );
+		insert( LimitError );
+end
