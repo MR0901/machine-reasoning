@@ -16,15 +16,8 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
 
 
 ---
-## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
 
-| Official Full Name  | Student ID (MTech Applicable)  |
-| :------------ |:---------------:|
-| Dong Meirong|  |
-
----
-
-## SECTION 4 : USER GUIDE
+## SECTION 3 : USER GUIDE
 
 ### [ 1 ] To run the system using iss-vm
 
@@ -64,7 +57,7 @@ The aforementioned rule shall be enhanced in the Guided Decision Table "Mortgage
  
 
 ---
-## SECTION 5 : Appendix
+## SECTION 4 : Appendix
 
 ### Enhancement Test Results Demonstration.pdf
 * This file contains the test results before and after the implementation of the enhancements to Credit Rating Risk Grade and Credit Rating validation
